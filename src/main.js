@@ -1,15 +1,17 @@
-// The Vue build version to load with the `import` command
-// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
+//入口文件
 import Vue from 'vue'
-import App from './App'
-import router from './router'
+import app from './App.vue'
+//导入mint-ui中的组件
 
-Vue.config.productionTip = false
+import MintUI from 'mint-ui'
+import 'mint-ui/lib/style.css'
+Vue.use(MintUI)
 
-/* eslint-disable no-new */
-new Vue({
+
+//导入app跟组件
+
+
+var vm = new Vue({
   el: '#app',
-  router,
-  components: { App },
-  template: '<App/>'
+  render: c => c(app)
 })
