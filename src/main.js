@@ -1,9 +1,14 @@
 //入口文件
 import Vue from 'vue'
 import app from './App.vue'
- 
+//导入路由包
+import VueRouter from 'vue-router'
+//安装路由
+Vue.use(VueRouter)
 //导入mui样式
 import './lib/mui/css/mui.min.css'
+import './lib/mui/css/icons-extra.css'
+
 
 //导入mint-ui中的组件
 
