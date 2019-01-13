@@ -9,7 +9,8 @@ Vue.use(VueRouter)
 import './lib/mui/css/mui.min.css'
 import './lib/mui/css/icons-extra.css'
 
-
+//导入路由模块
+import router from './router'
 //导入mint-ui中的组件
 
 import MintUI from 'mint-ui'
@@ -22,5 +23,6 @@ Vue.use(MintUI)
 
 var vm = new Vue({
   el: '#app',
-  render: c => c(app)
+  render: c => c(app),
+  router
 })
