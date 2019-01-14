@@ -44,10 +44,10 @@
       background-color: red;
     }
     &:nth-child(2) {
-      background-color: blue;
+      background-color: skyblue;
     }
     &:nth-child(3) {
-      background-color: cyan;
+      background-color: yellow;
     }
 
     img {
